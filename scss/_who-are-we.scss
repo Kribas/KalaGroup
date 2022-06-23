@@ -1,0 +1,54 @@
+.who-are-we {
+    margin: 122px 0px;
+
+    .who-are-we__left {
+        margin-top: 15%;
+        margin-right: 40px;
+        h1 {
+            font-size: 40px;
+                span {
+                    color: #079b00;
+                }
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 50px;
+            text-align: justify;
+        }
+        button {
+            background-color: #fff;
+            border: 2px solid #079b00;
+            width: 140px;
+            height: 51px;
+            font-size: 18px;
+            color: #079b00;
+
+        }
+    }
+
+    .who-are-we__right {
+        img {
+            width: 623px;
+            height: 623px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        
+        }
+    }
+
+    
+
+    @media screen and (max-width: 1200px) {
+        .who-are-we__right {
+            margin: 70px 0px;
+            img {
+                width: 100%;
+                height: auto;
+
+            }
+        }
+        .who-are-we__left {
+            margin-top: 0px;
+        }
+    }
+}
+
