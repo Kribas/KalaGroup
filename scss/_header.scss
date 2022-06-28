@@ -1,5 +1,8 @@
 .header {
     background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
         .header__inner {
             padding: 10px 0px;
             .header__logo {
