@@ -1,37 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,300;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,400&family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,400&display=swap");
 .header {
   background-color: #fff;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 
-.header .header__inner {
+.header .header__logo {
   padding: 10px 0px;
 }
 
-.header .header__inner .header__logo h3 {
+.header .header__logo h3 {
   color: #079b00;
-  font-weight: bolder;
+  font-weight: 800;
 }
 
-.header .header__inner .header__navbar .navbar {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .header__inner .header__navbar .nav-item .nav-link {
+.header .header__navbar .nav-item .nav-link {
   color: #2b2b2b;
   font-size: 16px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header .header__navbar .nav-item .nav-link {
+    color: #2b2b2b;
+    font-size: 16px;
+    margin-right: 9px;
+  }
 }
 
 .banner {
@@ -61,12 +57,11 @@
   font-size: 20px;
 }
 
-.banner .banner__contents button {
+.banner .banner__contents .explore {
   background-color: #079b00;
   color: #fff;
-  padding: 10px 50px;
+  padding: 10px 40px;
   font-size: 18px;
-  border: none;
 }
 
 .who-are-we {
@@ -92,11 +87,10 @@
   text-align: justify;
 }
 
-.who-are-we .who-are-we__left button {
+.who-are-we .who-are-we__left .read-more {
   background-color: #fff;
   border: 2px solid #079b00;
-  width: 140px;
-  height: 51px;
+  padding: 10px 40px;
   font-size: 18px;
   color: #079b00;
 }
@@ -133,275 +127,81 @@
   color: #079b00;
 }
 
-.our-subsidiaries .our-subsidiaries__body a .body__card-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/subsidiary-1.jpg") no-repeat scroll 0 0/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/subsidiary-1.jpg") no-repeat scroll 0 0/cover;
-  background-position: center;
+.our-subsidiaries .our-subsidiaries__body {
+  margin-bottom: 88px;
+}
+
+.our-subsidiaries .our-subsidiaries__body a .body__card {
   -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
           box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  position: relative;
+}
+
+.our-subsidiaries .our-subsidiaries__body a .body__card .gradient__image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   width: 100%;
   height: 286px;
 }
 
-.our-subsidiaries .our-subsidiaries__body a .body__card-1 .card__inner {
-  color: #fff;
-  padding: 65% 20px;
+.our-subsidiaries .our-subsidiaries__body a .body__card .gradient__image img {
+  position: relative;
+  width: 100%;
+  height: 286px;
+  z-index: -1;
+  display: block;
 }
 
-.our-subsidiaries .our-subsidiaries__body a .body__card-1 .card__inner h2 {
+.our-subsidiaries .our-subsidiaries__body a .body__card .card__inner {
+  color: #fff;
+  position: absolute;
+  bottom: 24px;
+  left: 18px;
+}
+
+.our-subsidiaries .our-subsidiaries__body a .body__card .card__inner h2 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 0px;
 }
 
-.our-subsidiaries .our-subsidiaries__body a .body__card-1 .card__inner span {
+.our-subsidiaries .our-subsidiaries__body a .body__card .card__inner span {
   font-size: 10px;
 }
 
-.our-subsidiaries .our-subsidiaries__body a .body__card-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/subsidiary-2.jpg") no-repeat scroll 0 0/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/subsidiary-2.jpg") no-repeat scroll 0 0/cover;
-  background-position: center;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  width: 100%;
-  height: 286px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-2 .card__inner {
-  padding: 65% 20px;
-  color: #fff;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-2 .card__inner h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-2 .card__inner span {
-  font-size: 10px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/subsidiary-3.jpg") no-repeat scroll 0 0/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/subsidiary-3.jpg") no-repeat scroll 0 0/cover;
-  background-position: center;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  width: 100%;
-  height: 286px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-3 .card__inner {
-  padding: 65% 20px;
-  color: #fff;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-3 .card__inner h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-3 .card__inner span {
-  font-size: 10px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/subsidiary-4.jpg") no-repeat scroll 0 0/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/subsidiary-4.jpg") no-repeat scroll 0 0/cover;
-  background-position: center;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  width: 100%;
-  height: 286px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-4 .card__inner {
-  padding: 65% 20px;
-  color: #fff;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-4 .card__inner h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-4 .card__inner span {
-  font-size: 10px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-5 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/bannerImage.jpg") no-repeat scroll 0 0/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bannerImage.jpg") no-repeat scroll 0 0/cover;
-  background-position: center;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  width: 100%;
-  height: 286px;
+.our-subsidiaries .our-subsidiaries__body a #body__card-4 {
   margin-left: 50%;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-5 .card__inner {
-  padding: 65% 20px;
-  color: #fff;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-5 .card__inner h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-5 .card__inner span {
-  font-size: 10px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-6 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/subsidiary-5.jpg") no-repeat scroll 0 0/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/subsidiary-5.jpg") no-repeat scroll 0 0/cover;
-  background-position: center;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   width: 100%;
-  height: 286px;
+}
+
+.our-subsidiaries .our-subsidiaries__body a #body__card-5 {
   margin-left: 50%;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-6 .card__inner {
-  padding: 65% 20px;
-  color: #fff;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-6 .card__inner h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-6 .card__inner span {
-  font-size: 10px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-7 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/subsidiary-6.jpg") no-repeat scroll 0 0/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/subsidiary-6.jpg") no-repeat scroll 0 0/cover;
-  background-position: center;
-  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   width: 100%;
-  height: 286px;
+}
+
+.our-subsidiaries .our-subsidiaries__body a #body__card-6 {
   margin-left: 50%;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-7 .card__inner {
-  padding: 65% 20px;
-  color: #fff;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-7 .card__inner h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0px;
-}
-
-.our-subsidiaries .our-subsidiaries__body a .body__card-7 .card__inner span {
-  font-size: 10px;
+  width: 100%;
 }
 
 @media screen and (max-width: 912px) {
-  .our-subsidiaries .our-subsidiaries__body a .body__card-1 {
+  .our-subsidiaries .our-subsidiaries__body a .body__card {
     margin-bottom: 40px;
   }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-1 .card__inner {
-    text-align: center;
-    padding: 15% 0px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-1 .card__inner h2 {
+  .our-subsidiaries .our-subsidiaries__body a .body__card .card__inner h2 {
     font-size: 25px;
   }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-1 .card__inner span {
+  .our-subsidiaries .our-subsidiaries__body a .body__card .card__inner span {
     font-size: 15px;
   }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-2 {
-    margin-bottom: 40px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-2 .card__inner {
-    padding: 15% 0px;
-    text-align: center;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-2 .card__inner h2 {
-    font-size: 25px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-2 .card__inner span {
-    font-size: 15px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-3 {
-    margin-bottom: 40px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-3 .card__inner {
-    padding: 15% 0px;
-    text-align: center;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-3 .card__inner h2 {
-    font-size: 25px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-3 .card__inner span {
-    font-size: 15px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-4 {
-    margin-bottom: 20px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-4 .card__inner {
-    padding: 15% 0px;
-    text-align: center;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-4 .card__inner h2 {
-    font-size: 25px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-4 .card__inner span {
-    font-size: 15px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-5 {
+  .our-subsidiaries .our-subsidiaries__body a #body__card-4 {
     margin-left: 0px;
   }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-5 .card__inner {
-    padding: 15% 0px;
-    text-align: center;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-5 .card__inner h2 {
-    font-size: 25px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-5 .card__inner span {
-    font-size: 15px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-6 {
+  .our-subsidiaries .our-subsidiaries__body a #body__card-5 {
     margin-left: 0px;
   }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-6 .card__inner {
-    padding: 15% 0px;
-    text-align: center;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-6 .card__inner h2 {
-    font-size: 25px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-6 .card__inner span {
-    font-size: 15px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-7 {
+  .our-subsidiaries .our-subsidiaries__body a #body__card-6 {
     margin-left: 0px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-7 .card__inner {
-    padding: 15% 0px;
-    text-align: center;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-7 .card__inner h2 {
-    font-size: 25px;
-  }
-  .our-subsidiaries .our-subsidiaries__body a .body__card-7 .card__inner span {
-    font-size: 15px;
   }
 }
 
@@ -435,11 +235,10 @@
   text-align: justify;
 }
 
-.our-services .our-services__right button {
+.our-services .our-services__right .read-more {
   background-color: #fff;
   border: 2px solid #079b00;
-  width: 140px;
-  height: 51px;
+  padding: 10px 40px;
   font-size: 18px;
   color: #079b00;
 }
@@ -475,9 +274,13 @@
   margin-bottom: 30px;
 }
 
-.blogs .blogs__title h1 {
+.blogs .blogs__title a h1 {
   color: #079b00;
   font-size: 40px;
+}
+
+.blogs .blogs__body .blog {
+  margin-bottom: 40px;
 }
 
 .blogs .blogs__body .blog img {
@@ -498,11 +301,22 @@
   font-weight: 700;
 }
 
+.back-to-top-div .back-to-top {
+  margin: auto;
+  z-index: 996;
+  margin-top: 122px;
+  width: 40px;
+  height: 40px;
+}
+
+.back-to-top-div .back-to-top img {
+  width: 40px;
+}
+
 .footer {
   background-color: #f2f2f2;
   color: #079b00;
   padding: 80px 0px;
-  margin-top: 122px;
 }
 
 .footer .footer__location .brand-name {
@@ -521,8 +335,7 @@
 }
 
 .footer .footer__navigation {
-  margin-left: 58px;
-  text-align: center;
+  margin-left: 140px;
 }
 
 .footer .footer__navigation h3 {
@@ -531,21 +344,11 @@
   margin-bottom: 20px;
 }
 
-.footer .footer__navigation p {
-  font-size: 18px;
+.footer .footer__navigation a {
+  color: #079b00;
 }
 
-.footer .footer__events {
-  text-align: center;
-}
-
-.footer .footer__events h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.footer .footer__events p {
+.footer .footer__navigation a p {
   font-size: 18px;
 }
 
@@ -615,69 +418,18 @@
   left: calc(48% - 25px);
 }
 
-.subsidiaries .subsidiaries__body .row-top .subsidiary {
+.subsidiaries .subsidiaries__body .subsidiary {
   margin: 30px 15px;
 }
 
-.subsidiaries .subsidiaries__body .row-top .subsidiary a img {
+.subsidiaries .subsidiaries__body .subsidiary a img {
   width: 100%;
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.subsidiaries .subsidiaries__body .row-top .subsidiary a h3 {
-  color: #079b00;
-  font-weight: 700;
-  padding-top: 13px;
-}
-
-.subsidiaries .subsidiaries__body .row-mid-1 .subsidiary {
-  margin: 30px 15px;
-}
-
-.subsidiaries .subsidiaries__body .row-mid-1 .subsidiary img {
-  width: 100%;
-  height: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.subsidiaries .subsidiaries__body .row-mid-1 .subsidiary h3 {
-  color: #079b00;
-  font-weight: 700;
-  padding-top: 13px;
-}
-
-.subsidiaries .subsidiaries__body .row-mid-2 .subsidiary {
-  margin: 30px 15px;
-}
-
-.subsidiaries .subsidiaries__body .row-mid-2 .subsidiary img {
-  width: 100%;
-  height: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.subsidiaries .subsidiaries__body .row-mid-2 .subsidiary h3 {
-  color: #079b00;
-  font-weight: 700;
-  padding-top: 13px;
-}
-
-.subsidiaries .subsidiaries__body .row-bottom .subsidiary {
-  margin: 30px 15px;
-}
-
-.subsidiaries .subsidiaries__body .row-bottom .subsidiary img {
-  width: 100%;
-  height: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.subsidiaries .subsidiaries__body .row-bottom .subsidiary h3 {
+.subsidiaries .subsidiaries__body .subsidiary a h3 {
   color: #079b00;
   font-weight: 700;
   padding-top: 13px;
@@ -775,54 +527,54 @@
   font-weight: normal;
 }
 
-.kala-incorp-services .services__body .service-mid-1 {
+.kala-incorp-services .services__body #service-mid-1 {
   margin-bottom: 30px;
 }
 
-.kala-incorp-services .services__body .service-mid-1 .mobile-view {
+.kala-incorp-services .services__body #service-mid-1 .mobile-view {
   display: none;
 }
 
-.kala-incorp-services .services__body .service-mid-1 .mobile-view img {
+.kala-incorp-services .services__body #service-mid-1 .mobile-view img {
   width: 100%;
   height: 620px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.kala-incorp-services .services__body .service-mid-1 .service-mid-1-left {
+.kala-incorp-services .services__body #service-mid-1 #service-mid-1-left {
   margin: 14% 0px;
 }
 
-.kala-incorp-services .services__body .service-mid-1 .service-mid-1-left p {
+.kala-incorp-services .services__body #service-mid-1 #service-mid-1-left p {
   font-size: 18px;
   text-align: justify;
   font-weight: normal;
 }
 
-.kala-incorp-services .services__body .service-mid-1 .service-mid-1-right img {
+.kala-incorp-services .services__body #service-mid-1 #service-mid-1-right img {
   width: 100%;
   height: 620px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.kala-incorp-services .services__body .service-mid-2 {
+.kala-incorp-services .services__body #service-mid-2 {
   margin-bottom: 30px;
 }
 
-.kala-incorp-services .services__body .service-mid-2 .service-mid-2-left img {
+.kala-incorp-services .services__body #service-mid-2 #service-mid-2-left img {
   width: 100%;
   height: 620px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.kala-incorp-services .services__body .service-mid-2 .service-mid-2-right {
+.kala-incorp-services .services__body #service-mid-2 #service-mid-2-right {
   margin: 14% 0px;
 }
 
-.kala-incorp-services .services__body .service-mid-2 .service-mid-2-right p {
+.kala-incorp-services .services__body #service-mid-2 #service-mid-2-right p {
   font-size: 18px;
   text-align: justify;
   font-weight: normal;
@@ -857,10 +609,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .kala-incorp-services .service-mid-1 .mobile-view {
+  .kala-incorp-services #service-mid-1 .mobile-view {
     display: unset !important;
   }
-  .kala-incorp-services .service-mid-1-right {
+  .kala-incorp-services #service-mid-1-right {
     display: none;
   }
   .kala-incorp-services .service-bottom .mobile-view {
@@ -875,14 +627,53 @@
   .kala-incorp-services .service-top .service-top-right {
     margin: 0px 0px !important;
   }
-  .kala-incorp-services .service-mid-1 .service-mid-1-left {
+  .kala-incorp-services #service-mid-1 #service-mid-1-left {
     margin: 0px 0px !important;
   }
-  .kala-incorp-services .service-mid-2 .service-mid-2-right {
+  .kala-incorp-services #service-mid-2 #service-mid-2-right {
     margin: 0px 0px !important;
   }
   .kala-incorp-services .service-bottom .service-bottom-left {
     margin: 0px 0px !important;
+  }
+}
+
+.blogs .blogs-page__title {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.blogs .blogs-page__title h1 {
+  color: #079b00;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 199px;
+}
+
+.blogs .blogs-page__title h1::after {
+  content: "";
+  background: #079b00;
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 80px;
+  bottom: -14px;
+  left: calc(48% - 25px);
+}
+
+@media screen and (max-width: 912px) {
+  .blogs .blogs-page__title h1 {
+    text-align: start;
+    margin-left: 0px;
+  }
+  .blogs .blogs-page__title h1::after {
+    display: none;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .blogs .blogs-page__title h1 {
+    margin-left: 157px;
   }
 }
 

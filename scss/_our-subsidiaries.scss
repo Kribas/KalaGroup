@@ -11,16 +11,30 @@
     }
 
     .our-subsidiaries__body {
+            margin-bottom: 88px;
             a {
-                .body__card-1 {
-                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/subsidiary-1.jpg") no-repeat scroll 0 0 / cover;
-                    background-position: center;
-                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                    
-                    width: 100%;
-                    height: 286px;
+                .body__card {
+                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                    position: relative;                    
+
+                    .gradient__image {
+                        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+                        width: 100%;
+                        height: 286px;
+                            img {
+                                position: relative;
+                                width: 100%;
+                                height: 286px;
+                                z-index: -1;
+                                display: block;
+                            }
+                    }
+
                         .card__inner {
                             color: #fff;
-                            padding: 65% 20px;
+                            position: absolute;
+                            bottom: 24px;
+                            left: 18px;
                             h2 {
                                 font-size: 16px;
                                 font-weight: 600;
@@ -34,139 +48,23 @@
             }
 
             a {
-                .body__card-2 {
-                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/subsidiary-2.jpg") no-repeat scroll 0 0 / cover;
-                    background-position: center;
-                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                   
-                    width: 100%;
-                    height: 286px;
-                        .card__inner {
-                            padding: 65% 20px;
-                            color: #fff;
-                            h2 {
-                                font-size: 16px;
-                                font-weight: 600;
-                                margin-bottom: 0px;
-                            }
-                            span {
-                                font-size: 10px;
-                            }
-                        }
-                }
-            }
-
-            a {
-                .body__card-3 {
-                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/subsidiary-3.jpg") no-repeat scroll 0 0 / cover;
-                    background-position: center;
-                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                    
-                    width: 100%;
-                    height: 286px;
-                        .card__inner {
-                            padding: 65% 20px;
-                            color: #fff;
-                            h2 {
-                                font-size: 16px;
-                                font-weight: 600;
-                                margin-bottom: 0px;
-                            }
-                            span {
-                                font-size: 10px;
-                            }
-                        }
-                }
-            }
-
-            a {
-                .body__card-4 {
-                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/subsidiary-4.jpg") no-repeat scroll 0 0 / cover;
-                    background-position: center;
-                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                    
-                    width: 100%;
-                    height: 286px;
-                        .card__inner {
-                            padding: 65% 20px;
-                            color: #fff;
-                            h2 {
-                                font-size: 16px;
-                                font-weight: 600;
-                                margin-bottom: 0px;
-                            }
-                            span {
-                                font-size: 10px;
-                            }
-                        }
-                }
-            }
-            
-            a {
-                .body__card-5 {
-                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerImage.jpg") no-repeat scroll 0 0 / cover;
-                    background-position: center;
-                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                   
-                    width: 100%;
-                    height: 286px;
+                #body__card-4 {
                     margin-left: 50%;
-                        .card__inner {
-                            padding: 65% 20px;
-                            color: #fff;
-                            h2 {
-                                font-size: 16px;
-                                font-weight: 600;
-                                margin-bottom: 0px;
-                            }
-                            span {
-                                font-size: 10px;
-                            }
-                        }
+                    width: 100%;
                 }
             }
 
             a {
-                .body__card-6 {
-                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/subsidiary-5.jpg") no-repeat scroll 0 0 / cover;
-                    background-position: center;
-                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                    
-                    width: 100%;
-                    height: 286px;
+                #body__card-5 {
                     margin-left: 50%;
-
-                        .card__inner {
-                            padding: 65% 20px;
-                            color: #fff;
-                            h2 {
-                                font-size: 16px;
-                                font-weight: 600;
-                                margin-bottom: 0px;
-                            }
-                            span {
-                                font-size: 10px;
-                            }
-                        }
+                    width: 100%;
                 }
             }
 
             a {
-                .body__card-7 {
-                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/subsidiary-6.jpg") no-repeat scroll 0 0 / cover;
-                    background-position: center;
-                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                    
-                    width: 100%;
-                    height: 286px;
+                #body__card-6 {
                     margin-left: 50%;
-
-                        .card__inner {
-                            padding: 65% 20px;
-                            color: #fff;
-                            h2 {
-                                font-size: 16px;
-                                font-weight: 600;
-                                margin-bottom: 0px;
-                            }
-                            span {
-                                font-size: 10px;
-                            }
-                        }
+                    width: 100%;
                 }
             }
 
@@ -177,11 +75,10 @@
     @media screen and (max-width: 912px) {
         .our-subsidiaries__body {
                 a {
-                    .body__card-1 {
+                    .body__card {
                             margin-bottom: 40px;
                             .card__inner {
-                                text-align: center;
-                                padding: 15% 0px;
+                                
                                     h2 {
                                         font-size: 25px;
                                     }
@@ -194,107 +91,20 @@
                 }
 
                 a {
-                    .body__card-2 {
-                        margin-bottom: 40px;
-                        .card__inner {
-                            padding: 15% 0px;
-                            text-align: center;
-                            h2 {
-                                font-size: 25px;
-                            }
-
-                            span {
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-
-                a {
-                    .body__card-3 {
-                        margin-bottom: 40px;
-                        .card__inner {
-                            padding: 15% 0px;
-                            text-align: center;
-                            h2 {
-                                font-size: 25px;
-                            }
-
-                            span {
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-
-                a {
-                    .body__card-4 {
-                        margin-bottom: 20px;
-                        .card__inner {
-                            padding: 15% 0px;
-                            text-align: center;
-                            h2 {
-                                font-size: 25px;
-                            }
-
-                            span {
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-
-                
-
-
-                a {
-                    .body__card-5 {
+                    #body__card-4 {
                         margin-left: 0px;
-                        .card__inner {
-                            padding: 15% 0px;
-                            text-align: center;
-                            h2 {
-                                font-size: 25px;
-                            }
-
-                            span {
-                                font-size: 15px;
-                            }
-                        }
                     }
                 }
 
                 a {
-                    .body__card-6 {
+                    #body__card-5 {
                         margin-left: 0px;
-                        .card__inner {
-                            padding: 15% 0px;
-                            text-align: center;
-                            h2 {
-                                font-size: 25px;
-                            }
-
-                            span {
-                                font-size: 15px;
-                            }
-                        }
                     }
                 }
 
                 a {
-                    .body__card-7 {
+                    #body__card-6 {
                         margin-left: 0px;
-                        .card__inner {
-                            padding: 15% 0px;
-                            text-align: center;
-                            h2 {
-                                font-size: 25px;
-                            }
-
-                            span {
-                                font-size: 15px;
-                            }
-                        }
                     }
                 }
         }
